@@ -2,9 +2,6 @@
 
 namespace Tests;
 
-require_once 'MemDriver.php';
-require_once 'Bucket.php';
-
 use PHPUnit\Framework\TestCase;
 
 class BucketTest extends TestCase

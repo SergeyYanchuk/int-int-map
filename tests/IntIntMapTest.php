@@ -3,10 +3,7 @@
 
 namespace Tests;
 
-require_once 'MemDriver.php';
-require_once 'Bucket.php';
 require_once 'IntIntMap.php';
-require_once 'IntIntMapException.php';
 
 use PHPUnit\Framework\TestCase;
 

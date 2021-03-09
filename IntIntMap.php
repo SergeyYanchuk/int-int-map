@@ -1,4 +1,7 @@
 <?php
+require_once 'MemDriver.php';
+require_once 'Bucket.php';
+require_once 'IntIntMapException.php';
 
 /**
  * Требуется написать IntIntMap, который по произвольному int ключу хранит произвольное int значение
