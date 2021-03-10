@@ -25,7 +25,7 @@ class IntIntMapTest extends TestCase
         shmop_delete($this->shmId);
     }
 
-    public function testMap()
+    public function testPutAndGet()
     {
         $map = new \IntIntMap($this->shmId, 300);
 
@@ -36,7 +36,7 @@ class IntIntMapTest extends TestCase
         $this->assertEquals(6, $map->get(23));
     }
 
-    public function testFullMap()
+    public function testPutInFulLMap()
     {
         $map = new \IntIntMap($this->shmId, 300);
 
@@ -57,7 +57,7 @@ class IntIntMapTest extends TestCase
         $map->put(55, 3);
     }
 
-    public function testMapRewrite()
+    public function testPutWithRewrite()
     {
         $map = new \IntIntMap($this->shmId, 300);
 
