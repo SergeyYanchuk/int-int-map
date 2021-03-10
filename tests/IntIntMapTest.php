@@ -56,4 +56,12 @@ class IntIntMapTest extends TestCase
         $map->put(45, 3);
         $map->put(55, 3);
     }
+
+    public function testMapRewrite()
+    {
+        $map = new \IntIntMap($this->shmId, 300);
+
+        $this->assertNull($map->put(23, 6));
+        $this->assertEquals(6, $map->put(23, 17));
+    }
 }
